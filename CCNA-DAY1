@@ -94,6 +94,24 @@ end
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
+!!!CUCM ANALOG PHONES CONFIG
+configure terminal
+dial-peer voice 1 pots
+   destination-pattern _00
+   port 0/0/0
+dial-peer voice 2 pots
+   destination-pattern _01
+   port 0/0/1
+dial-peer voice 3 pots
+   destination-pattern _02
+   port 0/0/2
+dial-peer voice 4 pots
+   destination-pattern _03
+   port 0/0/3
+end
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
 @@@!!IP telephony
 
 config t
